@@ -22,7 +22,9 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="landing-10/css/style.css">
     <script>
-        if (window.location.hostname === 'newspepe.co' && window.location.pathname === '/news') {
+        var urlParams = new URLSearchParams(window.location.search);
+        var source = urlParams.get('source');
+        if (source) {
             // If so, try to redirect to your app's deep link
             window.location.replace("newspepe://news?source=" + encodeURIComponent(window.location.search.split('=')[1]));
         } 
