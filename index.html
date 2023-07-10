@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Meta Tags -->
     <meta charset="utf-8">
@@ -7,9 +8,11 @@
     <!-- Author -->
     <meta name="author" content="News Pepe">
     <!-- description -->
-    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
+    <meta name="description"
+        content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
     <!-- keywords -->
-    <meta name="keywords" content="Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
+    <meta name="keywords"
+        content="Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
     <!-- Page Title -->
     <title>Official Site | News Pepe</title>
     <!-- Bundle -->
@@ -17,16 +20,21 @@
     <link rel="stylesheet" href="landing-10/css/line-awesome.min.css">
     <!-- Style Sheet -->
     <link rel="stylesheet" href="landing-10/css/style.css">
-
+    <script>
+        if (window.location.hostname === 'newspepe.co' && window.location.pathname === '/news') {
+            // If so, try to redirect to your app's deep link
+            window.location.replace("newspepe://news?source=" + encodeURIComponent(window.location.search.split('=')[1]));
+        } 
+    </script>
 </head>
 
 <body>
 
-<div class="fullscreen">
-    <video autoplay muted loop id="myVideo">
-        <source src="landing-10/img/video.mp4" type="video/mp4">
-    </video>
-    <div class="overlay"></div>
+    <div class="fullscreen">
+        <video autoplay muted loop id="myVideo">
+            <source src="landing-10/img/video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12 p-0">
@@ -37,7 +45,7 @@
                             </div>
 
                             <p class="sub_text text-white">
-                                Where you can get all the news 
+                                Where you can get all the news
                             </p>
 
                             <div class="col-12 p-0">
@@ -70,10 +78,11 @@
             </div>
         </div>
     </div>
-<!--</div>-->
-<!-- JavaScript -->
-<script src="landing-10/js/bundle.min.js"></script>
-<script src="landing-10/js/countdown.js"></script>
-<script src="landing-10/js/script.js"></script>
+    <!--</div>-->
+    <!-- JavaScript -->
+    <script src="landing-10/js/bundle.min.js"></script>
+    <script src="landing-10/js/countdown.js"></script>
+    <script src="landing-10/js/script.js"></script>
 </body>
+
 </html>
