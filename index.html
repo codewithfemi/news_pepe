@@ -27,7 +27,11 @@
         if (source) {
             // If so, try to redirect to your app's deep link
             window.location.replace("newspepe://news?source=" + encodeURIComponent(window.location.search.split('=')[1]));
-        } 
+        }
+
+        if (/Android/i.test(navigator.userAgent)) {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.codewithfemi.news_pepe';
+        }
     </script>
 </head>
 
